@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<section class="situation_section">
+  <div class="container">
+    <!-- 나의현황 페이지의 경로를 알려주는 alerts -->
+    <div class="situation_nav">
+      <a class="situation_a1" href="{% url 'mypage' %}">마이페이지</a> > <a class="situation_a2" href="{% url 'situation' %}">나의현황</a>
+    </div>
+
+    <hr class="situation_hr1">
+
+    <div class="situation_content">
+      <div class="sit_profile">
+        <h1 class="sit_h1">{% if user.is_authenticated %}
+            {{ user.username }}
+            {% endif %} 보유 포인트</h1>
+        <div class="myprofile">
+          <br><br><br><br>
+         <h1>{{user.point}} 포인트 보유중!</h1>
+          
+        </div>
+      </div>
+
+      <div class="sit_action">
+        <h1 class="sit_h1">신청목록</h1>
+        <div class="sit_act">
+          <!-- 나의현황 활동 들어갈 곳 --><br><br><br>
+          <h2>
+          {% for CUser in user.service_user.all %}
+          {{ CUser }}<br>
+          {% endfor %}
+        </h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

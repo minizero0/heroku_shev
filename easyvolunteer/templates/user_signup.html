@@ -1,0 +1,111 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<section class="page-section" id="services">
+  <div class="container"> 
+    <h2 class="text-center mt-0">USER SIGN UP</h2>
+    <!-- 일반 회원가입 입력 창 -->
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100 p-t-50 p-b-90">
+          <!-- <form class="login100-form validate-form flex-sb flex-w"> -->
+
+            <!-- 이름 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="username" placeholder="이름">
+              <span class="focus-input100"></span>
+            </div> -->
+
+
+            <!-- 이메일 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="email" placeholder="이메일">
+              <span class="focus-input100"></span>
+            </div> -->
+
+            <!-- 비밀번호 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+              <input class="input100" type="password" name="pass" placeholder="Password">
+              <span class="focus-input100"></span>
+            </div> -->
+
+            <!-- 주민번호 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="codenumber" placeholder="주민번호">
+              <span class="focus-input100"></span>
+            </div> -->
+
+            <!-- 전화번호 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="phonenumber" placeholder="전화번호">
+              <span class="focus-input100"></span>
+            </div> -->
+
+
+            <!-- 직업 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="JOB" placeholder="직업">
+              <span class="focus-input100"></span>
+            </div> -->
+
+
+            <!-- 자격증 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="자격증" placeholder="자격증">
+              <span class="focus-input100"></span>
+            </div> -->
+
+            <!-- 지역 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="area" placeholder="지역">
+              <span class="focus-input100"></span>
+            </div> -->
+
+            <!-- 기타 사항 -->
+            <!-- <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <input class="input100" type="text" name="기타" placeholder="기타 특이사항">
+              <span class="focus-input100"></span>
+            </div> -->
+
+            <!-- 회원가입  -->
+            <div class="container-login100-form-btn m-t-17">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+              <form method="post" action="">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button class="login100-form-btn" type= "submit">
+                  회원가입
+                </button>
+              </form>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/anims1ition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--==============x=================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+  </div>
+  </div>
+</section>
+{% endblock %}

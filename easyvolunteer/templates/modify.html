@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<!-- section -->
+<section class="modify_section">
+  <div class="modify_container">
+    <!-- 개인정보수정 페이지의 경로를 알려주는 alerts -->
+    <div class="modify_nav">
+      <a class="modify_a1" href="{% url 'mypage' %}">마이페이지</a> > <a class="modify_a2"
+        href="{% url 'modify' %}">개인정보수정</a>
+    </div>
+
+    <h1 class="modify_h1">Modify</h1>
+    <div class="modify_content">
+      <!-- 개인정보수정 폼 들어갈 곳-->
+    </div>
+
+    <div class="modify_button">
+      <div class="mod_button">
+        <a class="mod_button_a" href="#">취소</a><!-- 개인정보수정 취소버튼 -->
+        <a class="mod_button_a" href="#">수정완료</a><!-- 개인정보수정 완료버튼 -->
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

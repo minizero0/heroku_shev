@@ -1,0 +1,1 @@
+web: gunicorn shev project.wsgi --log-file - p

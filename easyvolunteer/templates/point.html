@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<section class="point_section">
+  <h1 class="point_h1">결제가 완료되었습니다</h1>
+  <img class="point_img" src="{% static 'img/코인.png'%}">
+  <div class="point">
+    <div class="point_button"><a class="point_a" role="button" href="goods">쇼핑 계속하기</a></div>
+    <div class="point_button"><a class="point_a" role="button" href="#">결제정보 확인하기</a></div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<section class="quest_what">
+
+  <!--봉사활동 내용-->
+  <div class="QW_header">
+    <div class="QW">
+      <h1 class="QW_subtitle">집도 따뜻 ! 마음도 따뜻 !</h1>
+      <h1 class="QW_title"><i>연탄</i> 나르기 봉사활동</h1>
+    </div>
+    <img src="{% static 'img/봉사.jpg'%}">
+  </div>
+
+  <div class="QW_content">
+<!-- 봉사설명 -->
+    <div class="qw_explain">
+      <p>봉사설명</p>
+    </div>
+
+
+    <div class="QW_button">
+      <a role="button" class="qw_button" href="#">See My Work</a>
+    </div>
+    
+
+    <div class="qw_content">
+      <h3 class="qw_con_title">참여 가능 레벨</h3>
+      <p class="qw_con_content"><i>LV.1</i> 이상</p>
+    </div>
+
+   
+    <div class="qw_content">
+      <h3 class="qw_con_title">예상 소요시간</h3>
+      <p class="qw_con_content"><i>3</i> hours</p>
+    </div>
+
+    
+    <div class="qw_content">
+      <h3 class="qw_con_title">장소</h3>
+      <p class="qw_con_content"><i>서울특별시 구로구 오류1동</i></p>
+    </div>
+
+    
+    <div class="qw_content">
+      <h3 class="qw_con_title">제공 포인트</h3>
+      <p class="qw_con_content"><i>170</i> POINT</p>
+    </div>
+
+    
+
+
+
+  </div>
+</section>
+{% endblock %}

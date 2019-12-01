@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+  <section class="mypage_section">
+     <div class="container">
+        <h1 class="mypage_h1">My page</h1>
+        <hr>
+        <div class="mypage">
+          <div class="mypage_content">
+            <div class="mypage_div">
+             <a type="button" class="mypage_but" href="{% url 'quest' %}"><img class="minimg" src="{% static 'img/전구.png'%}"  ></a> 
+              <br>
+              <h3 class="mypage_h3" >봉사 목록</h3>
+              <hr>
+              <p class="mypgae_p1">봉사 신청</p>
+            </div>
+          </div>
+          <div class="mypage_content">
+            <div class="mypage_div">
+              <a type="button" class="mypage_but" href="{% url 'goods2' %}"><img class="minimg" src="{% static 'img/코인.png'%}" ></a>
+              <br>
+              <h3 class="mypage_h3">포인트 사용처</h3>
+              <hr>
+              <p class="mypgae_p1">나의 포인트확인 가능, 기프티콘으로 교환가능사이트로 이동.</p>
+            </div>
+          </div>
+          <div class="mypage_content">
+            <div class="mypage_div">
+              <a type="button" class="mypage_but" href="{% url 'situation' %}"><img class="minimg" src="{% static 'img/사람.png'%}"  ></a>
+              <br>
+              <h3 class="mypage_h3">나의 현황</h3>
+              <hr>
+              <p class="mypgae_p1">나의 포인트와 봉사내역 확인 가능!</p>
+            </div>
+          </div>
+          <div class="mypage_content">
+            <div class="mypage_div">
+              <a type="button" class="mypage_but" href="{% url 'modify' %}"><img class="minimg" src="{% static 'img/노트.png'%}"  ></a>
+              <br>
+              <h3 class="mypage_h3">회원정보 수정하기</h3>
+              <hr>
+              <p class="mypgae_p1">정보수정</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endblock %}

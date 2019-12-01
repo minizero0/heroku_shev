@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+  <section class="organ_mypage_section">
+     <div class="container">
+        <h1 class="organ_mypage_h1">Organ My page</h1>
+        <hr>
+        <div class="organ_mypage">
+          <div class="organ_mypage_content">
+            <div class="organ_mypage_div">
+             <a type="button" class="organ_mypage_but" href="{% url 'register' %}"><img class="organ_minimg" src="{% static 'img/전구.png'%}"  ></a> 
+              <br>
+              <h3 class="organ_mypage_h3" >봉사 등록하기</h3>
+              <hr>
+              <p class="organ_mypgae_p1">봉사를 등록할 수 있는 페이지로 이동</p>
+            </div>
+          </div>
+          <div class="organ_mypage_content">
+            <div class="organ_mypage_div">
+              <a type="button" class="organ_mypage_but" href="#"><img class="organ_minimg" src="{% static 'img/사람.png'%}" ></a>
+              <br>
+              <h3 class="organ_mypage_h3">등록 봉사 목록</h3>
+              <hr>
+              <p class="organ_mypgae_p1">기관에서 등록한 봉사목록 띄어주는 페이지로 이동</p>
+            </div>
+          </div>
+          <div class="organ_mypage_content">
+            <div class="organ_mypage_div">
+              <a type="button" class="organ_mypage_but" href="#"><img class="organ_minimg" src="{% static 'img/사람.png'%}"  ></a>
+              <br>
+              <h3 class="organ_mypage_h3">??</h3>
+              <hr>
+              <p class="organ_mypgae_p1">??????<p>
+            </div>
+          </div>
+          <div class="organ_mypage_content">
+            <div class="organ_mypage_div">
+              <a type="button" class="organ_mypage_but" href="{% url 'modify' %}"><img class="organ_minimg" src="{% static 'img/노트.png'%}"  ></a>
+              <br>
+              <h3 class="organ_mypage_h3">기관정보 수정하기</h3>
+              <hr>
+              <p class="organ_mypgae_p1">기관정보 수정 페이지로 이동</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endblock %}

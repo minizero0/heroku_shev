@@ -1,0 +1,119 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+<div class="lay">
+
+    <div class="mypoint">
+        <div class="mypoint_p1">나의 포인트: {{ user.point }} Point</div>
+    </div>
+
+    <div class="brands">
+        <!--브랜드 이미지 누르면 넘어가는 html 만들어야됨-->
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/베라로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> 베스킨 라빈스</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/gs로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> GS25</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/세븐 로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> 세븐일레븐</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/cu로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> CU</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/이디야로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name">EDIYA COFFEE</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/스벅로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> STARBUCKS COFFEE</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/파바로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> 파리바게트</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img" src="{% static 'img/투썸로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> A Twosome Place</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img_lon" src="{% static 'img/cgv로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name">CGV</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img_midlon" src="{% static 'img/올리브영로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> 올리브영</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img_lon" src="{% static 'img/자드로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> 자연드림</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img_midlon" src="{% static 'img/랄라블라로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> lalavla</div>
+        </div>
+
+        <div class="one_brand">
+            <a class="brnad_but" type="button" href="{% url 'goods' %}">
+                <img class="brand_img_lon" src="{% static 'img/입생로랑로고.png'%}">
+            </a>
+            <br>
+            <div class="brand_name"> 입생로랑</div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

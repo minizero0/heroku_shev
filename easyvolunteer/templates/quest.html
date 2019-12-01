@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+
+{% block content %}
+<div class="Quest_lay">
+    <!--봉사카드-->
+    <div class="quests">
+        <section class="ftco-section">
+            <div class="container"></div>
+                
+
+일반 회원이 봉사활동을 등록하는 페이지
+{% if user.is_authenticated %}
+<h1>{{ user.username }}</h1><br>
+{% endif %}
+일반 회원 마이 페이지
+<a href= 'mypage'>나의현황 보러가기:</a>
+    {% for Service in service.all %}
+        <h1>{{ Service.name }} </h1>
+        <br>
+        <h3>보상: {{ Service.point }} 포인트</h3>
+        <h3>제한인원: {{ Service.number }}</h3>
+        <form method = "POST" action= "{%url 'quest_update' Service.id user.id  %}">
+        {% csrf_token %}
+        <button class ="point_button"><input type="submit" value="신청하기"></button><hr>
+        </form>
+   
+{% endfor %}
+{% endblock %}

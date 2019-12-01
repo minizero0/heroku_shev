@@ -1,0 +1,690 @@
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.minimg {
+    height: 30px;
+    width:30px;
+}
+
+.spage{
+    width: 100% ; 
+    height: 1000px;
+    margin-top: 80px;
+}
+
+/*퀘스트 봉사 등록 */
+.Qlist{
+    width:1000px;
+    height: 100%;
+    padding: 20px  40px;
+    display: inline-block;
+    margin:auto;
+}
+
+.lay{
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100%;
+}
+.ccard{
+    display: inline-table;
+    width: 200px;
+    
+}
+.Qcard {
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 210px;
+    height: 330px;
+    margin: 5px 5px;
+    border: 1px solid;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.Qcard-img-top{
+    width: 140px;
+    height: 80px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+.Qcard-body{
+    flex: 1 1 auto;
+    padding: 1px;
+    height: 150px;
+}
+.Qcard-title{
+    margin-bottom: 0.5px;
+}
+
+
+/* 브랜드페이지 -브랜드*/
+
+.brands{
+    text-align: center;
+    display: grid;
+    grid-template-columns:
+    20% 20% 20% 20% 20%;
+    font-family: 'BMHANNAPro';
+}
+
+.one_brnad{
+    text-align: center;
+    width:100%;
+    height:100%;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* ------브랜드페이지 내 대괄호------ */
+
+.mypoint{
+    font-family: 'BMHANNAPro';
+    text-align: center;
+    color: #D1A0F9;
+    position: relative;
+    margin: 10% auto 10px;
+    width: 100%;
+    padding: 15px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.mypoint::before,
+.mypoint::after{
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 20px;
+    height: 50px;
+    border-top: 1.2px solid #E9D4FB;
+    border-bottom: 1.2px solid #E9D4FB;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mypoint::before{
+    margin-left: 30%;
+    left: 0;
+    border-left: 1.2px solid #E9D4FB;
+}
+
+.mypoint::after{
+    margin-right: 30%;
+    right: 0;
+    border-right: 1.2px solid #E9D4FB;
+}
+
+/* --------------- */
+
+
+.brnad_but{
+    text-align: center;
+    width: 78px;
+    height: 78px;
+    background-color: rgba(255, 255, 255, .5);
+    border: 0;
+    outline: 0;
+    margin: 10px;
+}
+
+.brand_img{
+    width: 100%;
+    height: auto;
+    border: 0;
+    outline: 0;
+}
+
+.brand_img_midlon{
+    width: 100%;
+    height: auto;
+    margin-top: 30%;
+}
+
+.brand_img_lon{
+    width: 100%;
+    height: auto;
+    margin-top: 24%;
+}
+
+.brand_name{
+    width: 83px;
+    height: flex;
+    font-size: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    display: inline-flex;
+}
+
+/* goods 페이지 상품선택창*/
+
+@font-face{ 
+    font-family: 'BRBA_B'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff'); 
+    font-weight: normal; font-style: normal; 
+}
+
+.goods_section{
+    font-family: 'BMHANNAPro';
+    margin: 100px 20% 40px;
+    text-align: center;
+    width: 60%;
+}
+
+.goods_header{
+    font-size: 40px;
+    font-family: 'BRBA_B';
+    display: inline-block;
+}
+
+.goods_h1{
+    color: #F875D1;
+    float: left;
+    width: 50%;
+}
+
+.goods_h2{
+    color: #0303A1;
+    float: right;
+    width: 50%;
+}
+
+.goods{
+    text-align: center;
+    display: grid;
+    grid-template-columns:
+    20% 20% 20% 20% 20%;
+}
+
+.one_goods{
+    text-align: center;
+    width:100%;
+    height:100%;
+    display: inline-block;
+}
+
+.goods_img_but{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.goods_img{
+    width: 72px ;
+    height: 72px;
+    margin: 3px 3px 0px 3px;
+}
+
+.goods_price{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* point 페이지 결제완료창*/
+
+.alert{
+    width: 700px;
+    height: 300px ;
+    background-color: gray;
+
+/* border: yellowgreen !important ; */
+
+    text-align: center;
+    font-size: 30px;
+    margin: 100px 200px 300px 400px;
+
+}
+
+/* 소개 */
+
+.about{
+    width: 100%;
+    height: 160px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about_container1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+}
+
+.introduce_main{
+    display: inline-block;
+}
+
+.introduce_page{
+    text-align: center;
+    margin: 10%;
+}
+
+.about_container2{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.about_introduce{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+}
+
+/* 로그인 */
+
+.page-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.login_container2{
+    text-align: center;
+}
+
+.login_form{
+    text-align: center;
+}
+
+.login-img{
+    width: 100%;
+    height: 100%;
+}
+
+.login_id{
+    margin: 5px;
+}
+
+.login_pw{
+    margin: 5px 5px 20px;
+}
+
+/* 회원가입 선택창 */
+
+.select{
+    display: grid;
+    text-align: center;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 100% 100%;
+    margin-top: 50px;
+}
+
+
+/* 기업 회원가입 */
+
+.organ_signup_form{
+    text-align: center;
+}
+
+/* 일반 회원가입 */
+
+.user_signup_form{
+    text-align: center;
+}
+
+/* 개인정보수정 */
+
+.modify_section{
+    margin-top: 80px;
+    padding: 0 5% 0;
+    font-family: 'BMHANNAPro';
+    width: 100%;
+    height: 100%;
+}
+
+.modify_nav{
+    text-align: right;
+    position: relative;
+    bottom: -40px;
+    margin-right: 1%;
+}
+
+.modify_a1{
+    color: #111111;
+}
+
+.modify_a2{
+    color: #8e44ad;
+}
+
+.modify_content{
+    border: 2px solid rgba(132, 18, 240, 0.2);
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+}
+
+.modify_h1{
+    text-align: center;
+    color: white;
+    font-family: 'BMHANNAPro';
+    background-color: rgb(201, 143, 255);
+    font-size: 30px;
+    position: relative; z-index: 2;
+    margin: 0 80% 0 3%;
+    padding: 0.5%;
+    bottom: -21px;
+    border-radius: 5px;
+}
+
+.mod_button{
+    text-align: right;
+    margin: 10px 1%;
+}
+
+.mod_button_a{
+    font-size: 20px;
+    color: #D1A0F9;
+    padding: 0.3%;
+    border: solid 1.5px #ceb6e9;
+    border-radius: 4px;
+}
+
+/* 나의현황 */
+
+.situation_section{
+    margin-top: 100px;
+    font-family: 'BMHANNAPro';
+}
+
+.situation_content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.situation_hr1{
+    border: solid 
+}
+
+.situation_a1{
+    color: #111111;
+}
+
+.situation_a2{
+    color: #8e44ad;
+}
+
+.sit_profile{
+    margin: 10px;
+}
+
+.myprofile{
+    border: 2px solid rgba(132, 18, 240, 0.2);
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+    /* height 백이랑 합칠 때 100%로 바꾸기 */
+}
+
+.sit_h1{
+    text-align: center;
+    color: white;
+    font-family: 'BMHANNAPro';
+    background-color: rgb(201, 143, 255);
+    font-size: 30px;
+    position: relative; z-index: 2;
+    bottom: -24px;
+    margin: 0 50px 0;
+    padding: 1.5%;
+    border-radius: 5px;
+}
+
+.sit_action{
+    margin: 10px;
+}
+
+.sit_act{
+    border: 2px solid rgba(149, 35, 255, 0.2);
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+    /* height 백이랑 합칠 때 100%로 바꾸기 */
+}
+
+/* 결제완료창(point) */
+
+.point_section{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.point{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin: 10px 30%;
+}
+
+.point_h1{
+    font-family: 'BMHANNAPro';
+}
+
+.point_h1_a{
+    color: #8e44ad;
+}
+
+.point_img{
+    margin: 20px;
+}
+
+.point_button{
+    font-size: 20px;
+    font-family: 'BMHANNAPro';
+    border: solid 2.5px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 4px;
+}
+
+.point_a{
+    color: rgb(0, 0, 0);
+    font-family: 'BMHANNAPro';
+}
+
+/* 마이페이지 */
+
+.mypage_section{
+    margin-top: 100px;
+}
+
+.mypage_h1{
+    font-family: 'BMHANNAPro';
+}
+
+.mypage{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-family: 'BMHANNAPro';
+    margin: 30px 10px;
+}
+
+.mypage_content{
+    border: 1px solid #111111;
+    padding: 10px;
+}
+
+.mypage_div{
+    text-align: center;
+}
+
+.mypage_but{
+    margin-top: 30px;
+    text-align: center
+}
+
+.minimg{
+    text-align: center;
+    width: 105px;
+    height: 105px;
+    background-color: rgba(255, 255, 255, .99);
+}
+
+.mypage_h3{
+    margin: 30px 0 0;
+    text-align: center;
+    font-family: 'BMHANNAPro';
+    width: 100%;
+    height: 50px;
+}
+
+.mypgae_p1{
+    text-align: center;
+    color: #ceb6e9;
+}
+
+/* 기관 마이페이지 */
+
+.organ_mypage_section{
+    margin-top: 100px;
+}
+
+.organ_mypage_h1{
+    font-family: 'BMHANNAPro';
+}
+
+.organ_mypage{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-family: 'BMHANNAPro';
+    margin: 30px 10px;
+}
+
+.organ_mypage_content{
+    border: 1px solid #111111;
+    padding: 10px;
+}
+
+.organ_mypage_div{
+    text-align: center;
+}
+
+.organ_mypage_but{
+    margin-top: 30px;
+    text-align: center
+}
+
+.organ_minimg{
+    text-align: center;
+    width: 105px;
+    height: 105px;
+    background-color: rgba(255, 255, 255, .99);
+}
+
+.organ_mypage_h3{
+    margin: 30px 0 0;
+    text-align: center;
+    font-family: 'BMHANNAPro';
+    width: 100%;
+    height: 50px;
+}
+
+.organ_mypgae_p1{
+    text-align: center;
+    color: #ceb6e9;
+}
+
+/* 퀘스트설명 */
+
+.quest_what{
+    margin-top: 100px;
+    font-family: 'BMHANNAPro';
+}
+
+.QW_header{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.QW_subtitle{
+    font-size: 30px;
+    font-family: 'BMHANNAPro';
+    color: #ceb6e9;
+}
+
+.QW_title{
+    font-size: 50px;
+    font-family: 'BMHANNAPro';
+}
+
+.QW_title i{
+    color: #8e44ad;
+}
+
+.QW_content{
+    text-align: center;
+    margin: 10px 15%;
+    width: 70%;
+    height: 100%;
+}
+
+.QW_button{
+    margin: 10px 0;
+    text-align: right;
+}
+
+.qw_button{
+    color: #ceb6e9;
+}
+
+.qw_content{
+    margin: 30px auto;
+}
+
+.qw_con_title{
+    font-family: 'BMHANNAPro';
+    color: #47007D;
+    font-size: 30px;
+}
+
+.qw_con_content i{
+    font-size: 20px;
+    color: #FED02B;
+}
+
+/* -------봉사설명 중 대괄호------- */
+
+.qw_explain{
+    position: relative;
+    margin: 10% auto 10px;
+    width: 100%;
+    padding: 15px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.qw_explain::before,
+.qw_explain::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.qw_explain::before{
+    top: 0;
+    left: 0;
+    border-top: 1.2px solid #111111;
+    border-left: 1.2px solid #111111;
+}
+
+.qw_explain::after{
+    bottom: 0;
+    right: 0;
+    border-bottom: 1.2px solid #111111;
+    border-right: 1.2px solid #111111;
+}
+
+/* ------------------- */

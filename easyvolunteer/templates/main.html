@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center justify-content-center text-center">
+      <div class="col-lg-10 align-self-end">
+        
+        <h1 class="text-uppercase text-white font-weight-bold">쉬 Easy Volunteer 봉</h1><br>
+        {% if user.is_authenticated %}
+        <h1 class="text-uppercase text-white font-weight-bold">반갑습니다 {{ user.username }} 회원님 </h1>
+        {% else %}
+        <h1 class="text-uppercase text-black font-weight-bold"> 로그인이 필요합니다.</h1>
+        {% endif %}
+        <hr class="divider my-4">
+      </div>
+      <div class="col-lg-8 align-self-baseline">
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 소개 페이지 -->
+
+{% endblock %}

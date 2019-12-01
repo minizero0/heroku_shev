@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+
+{% block content %}            
+{% if user.is_authenticated %}
+{% endif %}
+<section class="mypage_section">
+        <div class="container">
+           <h1 class="mypage_h1">포인트 사용 페이지</h1>
+           <hr>
+           
+             <div class="mypage_content">
+{% for Brand in brands.all %}
+    <h1>{{ Brand.image.photho }}</h1>
+    <h1>{{ Brand.name }}</h1>
+    <hr>
+    {% for Product in Brand.products.all %}
+        <h2 >{{ Product.name }}</h2>
+        <h3>{{ Product.point }} 포인트</h3>
+        <form method = "POST" action= "{%url 'point_update' Product.id user.id %}">
+            {% csrf_token %}
+            <button class="point_button"><input type="submit" value="교환하기"></button>
+            <hr>
+        </form>
+        
+    
+    {% endfor %}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<section class="page-section" id="services">
+  <div class="container">
+    <h2 class="text-center mt-0">SIGN UP</h2>
+    <hr class="divider my-4">
+    <div class="select">
+      <div class="select_organ_img">
+        <img src="#">
+      </div>
+      <div class="select_user_img">
+        <img src="#">
+      </div>
+      <div class="select_organ">
+        <a class="btn btn-primary btn-xl js-scroll-trigger" id="organ_signup_button" href="organ_signup">기업 회원가입</a>
+        <!-- 기업 회원가입 버튼 -->
+      </div>
+      <div class="select_user">
+        <a class="btn btn-primary btn-xl js-scroll-trigger" id="organ_signup_button" href="user_signup">일반인 회원가입</a>
+        <!-- 일반 회원가입 버튼 -->
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
